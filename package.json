@@ -3,11 +3,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
+    "build": "nuxt build && node public/index.js",
+    "dev": "nuxt dev && node public/index.js",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "preview": "nuxt preview && node public/index.js",
+    "postinstall": "nuxt prepare && node public/index.js"
   },
   "dependencies": {
     "@nuxt/image": "^1.5.0",
